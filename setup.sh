@@ -1,7 +1,11 @@
 #!/bin/bash
+
+# Download mediamtx
 wget https://github.com/bluenviron/mediamtx/releases/download/v1.16.0/mediamtx_v1.16.0_linux_arm64.tar.gz
 
+# Extract the archive (excluding the default config to preserve our custom one)
 tar -xvzf mediamtx_v1.16.0_linux_arm64.tar.gz --exclude=mediamtx.yml
 
-./mediamtx &
-rpicam-vid --width 1280 --height 720 --framerate 30 --codec h264 --inline --listen -o tcp://0.0.0.0:8556
+# Make run script executable and execute it
+chmod +x run.sh
+./run.sh
