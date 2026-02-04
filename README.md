@@ -8,4 +8,4 @@ It installs and runs rpicam for video with Mediamtx for streaming it via RTSP
 - Run the following command: chmod +x setup.sh
 - Run the setup script
 
-If you need to run it again, you can run the run.sh script directly
+If you need to run it again, run the chmod first to give exec permission, then you can run the run.sh script directly.
