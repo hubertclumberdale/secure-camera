@@ -9,3 +9,8 @@ tar -xvzf mediamtx_v1.16.0_linux_arm64.tar.gz --exclude=mediamtx.yml
 # Make run script executable and execute it
 chmod +x run.sh
 ./run.sh
+
+cp systemd/secure-camera.service /etc/systemd/system/secure-camera.service
+sudo systemctl daemon-reload
+sudo systemctl enable securecamera.service
+sudo systemctl start securecamera.service
