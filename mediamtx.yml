@@ -770,6 +770,7 @@ paths:
   #   source: rtsp://my_camera
   stream:
     source: rpiCamera
+    rpiCameraFPS: 15
   # Settings under path "all_others" are applied to all paths that
   # do not match another entry.
   all_others:
