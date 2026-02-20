@@ -12,5 +12,5 @@ chmod +x run.sh
 
 cp systemd/secure-camera.service /etc/systemd/system/secure-camera.service
 sudo systemctl daemon-reload
-sudo systemctl enable securecamera.service
-sudo systemctl start securecamera.service
+sudo systemctl enable secure-camera.service
+sudo systemctl start secure-camera.service
