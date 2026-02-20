@@ -771,6 +771,9 @@ paths:
   stream:
     source: rpiCamera
     rpiCameraFPS: 15
+    rpiCameraWidth: 1024
+    # Height of frames.
+    rpiCameraHeight: 768
   # Settings under path "all_others" are applied to all paths that
   # do not match another entry.
   all_others:
