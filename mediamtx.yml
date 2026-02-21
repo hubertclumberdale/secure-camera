@@ -768,12 +768,17 @@ paths:
   # example:
   # my_camera:
   #   source: rtsp://my_camera
-  stream:
+  main:
     source: rpiCamera
     rpiCameraFPS: 15
     rpiCameraWidth: 1024
-    # Height of frames.
     rpiCameraHeight: 768
+  sub:
+    source: rpiCamera
+    rpiCameraSecondary: true
+    rpiCameraFPS: 5
+    rpiCameraWidth: 640
+    rpiCameraHeight: 480  
   # Settings under path "all_others" are applied to all paths that
   # do not match another entry.
   all_others:
