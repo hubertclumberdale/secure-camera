@@ -773,24 +773,16 @@ paths:
     rpiCameraFPS: 15
     rpiCameraWidth: 1024
     rpiCameraHeight: 768
-  sub_day:
+  sub:
     source: rpiCamera
     rpiCameraSecondary: true
     rpiCameraWidth: 640
     rpiCameraHeight: 480
-    rpiCameraFPS: 5
+    rpiCameraFPS: 3
     rpiCameraCodec: mjpeg
-    rpiCameraMJPEGQuality: 60
-  sub_night:
-    source: rpiCamera
-    rpiCameraSecondary: true
-    rpiCameraWidth: 640
-    rpiCameraHeight: 480
-    rpiCameraFPS: 2
-    rpiCameraCodec: mjpeg
-    rpiCameraMJPEGQuality: 75
+    rpiCameraMJPEGQuality: 70
     rpiCameraDenoise: "cdn_hq"
-    rpiCameraExposure: long
+    rpiCameraExposure: normal
   # Settings under path "all_others" are applied to all paths that
   # do not match another entry.
   all_others:
